@@ -1,5 +1,12 @@
-
 document.addEventListener("DOMContentLoaded", () => {
+  // Browser Detection
+  const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+
+  if (!isChrome) {
+    alert("For the best experience, please open this page in Google Chrome.");
+  }
+
+  // Login Form Handling
   const loginForm = document.getElementById("login-form");
   const passwordInput = document.getElementById("password");
   const errorMessage = document.getElementById("error-message");
