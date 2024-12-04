@@ -1,9 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Browser Detection
   const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+const isFirefox = /Firefox/.test(navigator.userAgent);
 
-  if (!isChrome) {
-    alert("For the best experience, please open this page in Google Chrome.");
+  console.log("Browser detection: ", navigator.userAgent);
+
+  if (!isChrome && !isFirefox) {
+    alert("For the best experience, please open this page in Google Chrome or Firefox.");
   }
 
   // Login Form Handling
