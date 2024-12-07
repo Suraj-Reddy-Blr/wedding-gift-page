@@ -1,30 +1,52 @@
-
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fffaf0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  color: #333;
 }
+
 .container {
   max-width: 800px;
   margin: auto;
   padding: 20px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 header {
-  background-color: #f4e1d2;
+  background-color: #ffebcd;
   padding: 20px;
   border-radius: 8px;
 }
+
 header h1 {
   color: #d2691e;
+  font-size: 28px;
+  margin: 0;
 }
+
+.sub-header {
+  color: #555;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 form input {
   padding: 10px;
   margin: 10px 0;
@@ -32,7 +54,15 @@ form input {
   border-radius: 5px;
   width: 100%;
   max-width: 300px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
 }
+
+form input:focus {
+  border-color: #ff7f50;
+  outline: none;
+}
+
 form .btn {
   background-color: #ff7f50;
   color: white;
@@ -40,29 +70,53 @@ form .btn {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
 form .btn:hover {
   background-color: #e06a3c;
 }
+
 .message, .gift {
   margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s ease;
 }
-.gift .btn {
-  background-color: #ff7f50;
-  color: white;
-  padding: 10px 15px;
-  text-decoration: none;
-  border-radius: 5px;
+
+.message:hover, .gift:hover {
+  background-color: #fff;
 }
+
+.gift-image {
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gift-image:hover {
+  transform: scale(1.1);
+}
+
+#voucher-code {
+  font-size: 18px;
+  color: #333;
+  margin-top: 15px;
+  transition: opacity 0.3s ease;
+}
+
 footer {
   margin-top: 20px;
   font-size: 14px;
   color: #aaa;
+  transition: color 0.3s ease;
 }
-.gift-image {
-  width: 200px;
-  cursor: pointer;
+
+footer:hover {
+  color: #888;
 }
+
 #fireworks {
   position: fixed;
   top: 0;
